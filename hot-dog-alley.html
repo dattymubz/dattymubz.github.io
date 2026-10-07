@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot Dog Alley — Pier Village | Unofficial demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@360;560;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Outfit,sans-serif;background:#1a120c;color:#f6efe4}
+.banner{background:#e23d2b;color:#fff;text-align:center;font-size:13px;padding:8px 12px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 6vw}
+.mark{font-family:"Lilita One",sans-serif;font-size:26px;letter-spacing:.02em}
+.mark span{color:#f2c14e}
+nav a{color:#f6efe4;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{margin:8px 6vw 28px;border-radius:26px;padding:58px 48px;background:radial-gradient(circle at 80% 20%,#f2c14e 0%,transparent 28%),linear-gradient(160deg,#e23d2b,#8c1e14 70%);min-height:460px;display:flex;flex-direction:column;justify-content:flex-end}
+.kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px}
+h1{font-family:"Lilita One",sans-serif;font-size:clamp(46px,7vw,84px);line-height:.9;margin:8px 0 12px;max-width:14ch}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.cta a{text-decoration:none;background:#f6efe4;color:#1a120c;padding:13px 18px;border-radius:999px;font-weight:700}
+section{padding:20px 6vw 50px}h2{font-family:"Lilita One",sans-serif;font-size:36px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.dog{background:#271c14;border:1px solid #3d2c22;border-radius:16px;padding:18px}
+.dog b{display:block;font-size:18px;margin-bottom:6px;color:#f2c14e}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:#271c14;border-radius:16px;padding:22px}
+footer{padding:10px 6vw 40px;color:#a89886;font-size:13px}
+@media(max-width:700px){.hero{padding:32px 22px}.hours{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="banner">Unofficial sales demo — not Hot Dog Alley’s site. Pitch sample only.</div>
+<header><div class="mark">Hot Dog <span>Alley</span></div><nav><a href="#dogs">Dogs</a><a href="#hours">Hours</a></nav></header>
+<div class="hero">
+  <div class="kicker">533 Ocean Blvd · Pier Village</div>
+  <h1>Lunch, a dog, and the pier breeze.</h1>
+  <p>American dogs and takeout a short walk from the water. Outdoor seating. No alcohol. Catering on request.</p>
+  <div class="cta"><a href="tel:9126380202">Call (912) 638-0202</a></div>
+</div>
+<section id="dogs">
+  <h2>What people come for</h2>
+  <div class="grid">
+    <div class="dog"><b>Classic dog</b>The alley standard. Confirm today’s toppings at the window.</div>
+    <div class="dog"><b>Takeout lunch</b>Built for a bench at the pier, not a reservation book.</div>
+    <div class="dog"><b>Catering</b>Listings say they cater. A real site would have a form for that.</div>
+    <div class="dog"><b>Outdoor seats</b>Ocean Blvd, Pier Village side. Easy in, easy out.</div>
+  </div>
+</section>
+<section id="hours">
+  <div class="hours">
+    <div class="box"><h2>Hours</h2><p>Mon–Fri · 11:00am – 2:00pm<br>Sat–Sun · Closed<br><span style="color:#a89886;font-size:13px">Holiday hours vary. Call first.</span></p></div>
+    <div class="box"><h2>Visit</h2><p>533 Ocean Blvd<br>St. Simons Island, GA 31522<br>(912) 638-0202</p></div>
+  </div>
+</section>
+<footer>Demo only. Hours and services from public listings, Oct 2026. Do not publish as the official site without the owner.</footer>
+</body>
+</html>

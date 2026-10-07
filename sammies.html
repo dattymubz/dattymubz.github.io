@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sammies — Redfern Village | Unofficial demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Outfit:wght@360;500;650&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c241c;--sand:#f4efe6;--kelp:#1f6b4a;--card:#fffdf8}
+*{box-sizing:border-box}body{margin:0;font-family:Outfit,sans-serif;color:var(--ink);background:var(--sand)}
+.banner{background:#3d2a14;color:#f6e7c8;font-size:13px;text-align:center;padding:8px 16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 7vw}
+.logo{font-family:Fraunces,serif;font-size:28px}
+nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-size:14px}
+.hero{margin:0 7vw 40px;border-radius:28px;min-height:520px;background:linear-gradient(145deg,#1f6b4a,#0e3b2c 55%,#c4a15a 140%);color:#f7f3ea;padding:64px 56px;display:flex;flex-direction:column;justify-content:flex-end}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font-size:12px;opacity:.8}
+h1{font-family:Fraunces,serif;font-weight:500;font-size:clamp(42px,6vw,76px);line-height:.95;margin:12px 0 16px;max-width:12ch}
+.hero p{max-width:46ch;font-size:18px;line-height:1.5}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.cta a{text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:650}
+.cta .pri{background:#f7f3ea;color:#134833}.cta .sec{border:1px solid rgba(247,243,234,.5);color:#f7f3ea}
+section{padding:28px 7vw 64px}h2{font-family:Fraunces,serif;font-size:40px;margin:0 0 8px}
+.sub{color:#5c665c;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;padding:22px;border:1px solid #e6dfd2}
+.price{color:var(--kelp);font-weight:650}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.panel{background:#134833;color:#f7f3ea;border-radius:22px;padding:32px}
+.panel a{color:#f6e7c8}
+footer{padding:28px 7vw 48px;color:#6b6256;font-size:13px}
+@media(max-width:800px){.hero{padding:36px 24px}.split{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="banner">Unofficial sales demo — not the restaurant’s site. Built as a pitch sample for the owner.</div>
+<header><div class="logo">Sammies</div><nav><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav></header>
+<div class="hero">
+  <div class="kicker">Redfern Village · St. Simons Island</div>
+  <h1>A sandwich that packs for the beach.</h1>
+  <p>Meats and cheeses sliced every morning. Honey wheat, seeded rye, or a kaiser. Chicken salad, pimento cheese, and the cookies people actually drive for.</p>
+  <div class="cta"><a class="pri" href="tel:9122684920">Call (912) 268-4920</a><a class="sec" href="#menu">See the board</a></div>
+</div>
+<section id="menu">
+  <h2>The board</h2>
+  <p class="sub">Originals come dressed with Duke’s, French’s, kosher dill, and white American. Confirm prices in store.</p>
+  <div class="grid">
+    <div class="card"><h3>Turkey</h3><p>Honey wheat, rye, or kaiser.</p><div class="price">about $8.50</div></div>
+    <div class="card"><h3>Roast beef</h3><p>Same simple build. The one regulars reorder.</p><div class="price">about $8.50</div></div>
+    <div class="card"><h3>Chicken salad</h3><p>Luncheon-style, on honey wheat.</p><div class="price">ask at the counter</div></div>
+    <div class="card"><h3>Pimento cheese</h3><p>Half-pound cups for the boat.</p><div class="price">ask at the counter</div></div>
+  </div>
+</section>
+<section id="hours">
+  <div class="split">
+    <div><h2>Hours</h2><p class="sub">Closed Saturday and Sunday. Call before you drive.</p><div class="card"><p>Mon–Fri · 10:30am – 2:30pm<br>Sat–Sun · Closed</p></div></div>
+    <div class="panel" id="visit"><h2 style="color:#f7f3ea">Find us</h2><p>256 Redfern Village<br>St. Simons Island, GA 31522</p><p><a href="tel:9122684920">(912) 268-4920</a></p></div>
+  </div>
+</section>
+<footer>Demo only. Public listing data, Oct 2026. Do not publish under the Sammies name without the owner’s OK.</footer>
+</body>
+</html>
